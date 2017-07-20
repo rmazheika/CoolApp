@@ -13,4 +13,9 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Login -->
+    <string name="login_hint">Login</string>
+    <string name="password_hint">Password</string>
+    <string name="login_btn_text">LOGIN</string>
 </resources>
