@@ -33,7 +33,7 @@
 
         <activity
             android:name=".data.local.Main2Activity"
-            android:label="@string/title_activity_main2"
+            android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity

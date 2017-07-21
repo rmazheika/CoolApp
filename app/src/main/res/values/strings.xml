@@ -10,6 +10,7 @@
     <string name="empty_ribots">There aren\'t any ribots</string>
     <string name="error_loading_ribots">There was a problem loading the ribots</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main">Main ribots list</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
