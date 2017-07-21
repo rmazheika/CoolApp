@@ -1,5 +1,7 @@
 package uk.co.ribot.androidboilerplate.ui.login;
 
+import android.text.TextUtils;
+
 import javax.inject.Inject;
 
 import rx.Subscription;
@@ -28,7 +30,25 @@ public class LoginPresenter extends BasePresenter<LoginMvpView> {
         if (mSubscription != null) mSubscription.unsubscribe();
     }
 
-    public void executeLoginRequest(String login, String password) {
+    public boolean verifyCredentials(String login, String password) {
+        boolean verified = true;
 
+        if (TextUtils.isEmpty(login)) {
+            getMvpView().showLoginError();
+            verified = false;
+        } else {
+            getMvpView().showLoginEmptyError();
+        }
+        if (TextUtils.isEmpty(password)) {
+            getMvpView().showPasswordError();
+            verified = false;
+        } else {
+            getMvpView().showPasswordEmptyError();
+        }
+        return verified;
+    }
+
+    public void executeLoginRequest(String login, String password) {
+        getMvpView().showLoginSuccess();
     }
 }

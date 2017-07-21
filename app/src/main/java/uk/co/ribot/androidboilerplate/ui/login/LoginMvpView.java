@@ -11,4 +11,10 @@ public interface LoginMvpView extends MvpView {
     void showLoginSuccess();
 
     void showLoginError();
+    void showLoginEmptyError();
+
+    void showPasswordError();
+    void showPasswordEmptyError();
+
+    void showError();
 }

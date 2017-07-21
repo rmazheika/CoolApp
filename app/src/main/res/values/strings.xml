@@ -18,4 +18,6 @@
     <string name="login_hint">Login</string>
     <string name="password_hint">Password</string>
     <string name="login_btn_text">LOGIN</string>
+    <string name="login_error">Login is incorrect. Please, enter valid value</string>
+    <string name="password_error">Password is incorrect. Please, enter valid value</string>
 </resources>
